@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+@import "normalize.scss";
+@import "layout.scss";
+
+body{
+	background: #292D3D url('../img/bg.png') 50% no-repeat;	
+	background-size: cover; 
+	font: 400 14px/1.6 Lato, Helvetica, sans-serif;
+	color: #B7BACC; 
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 700px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+	background: #57DE8D;
+	outline: none;
+	border: none;
+	text-transform: uppercase;
+	color: white;
+	width: 165px;
+	height: 56px;
+	border-radius: 5%;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-game{
+	width: 600px;
+	height: 540px;
+	background: #222533;
+	margin-top: 146px;
+	
+	&__icon{
+		width: 23px;
+		height: 23px;
+		margin: 0 auto 12px;
+		
+		&--tooltip{
+			background: url('../img/tooltip.svg') 50% no-repeat;
+			bakcground-size: cover;
+		}
+
+		&--card{
+			background: url('../img/card.svg') 50% no-repeat;
+			bakcground-size: cover;
+		}
+
+		&--basket{
+			background: url('../img/basket.svg') 50% no-repeat;
+			bakcground-size: cover;
+		}
+	}
+
+	&__tabs{
+		list-style: none;
+		background: #2C303F;
+		padding: 33px 50px 0;
+		margin: 0;
+
+		& li{
+			display: inline-block;
+			float: left;
+			margin-left: 24px;
+			padding: 0 17px 32px 20px;
+			
+			&:first-child{
+			margin-left: 0;
+			}
+			
+			& a{
+				text-decoration: none;
+				color: inherit;
+				font-size: 16px;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	&__content{
+		padding: 59px 47px 64px;
+	}
+
+	&__title, &__subtitle{
+		color: #FFF;
+		margin: 0;
+	}
+
+	&__rating{
+		font-family: Arial, sans-serif;
+		unicode-bidi: bidi-override;
+    	direction: rtl;
+    	text-align: left;
+    	
+    	& span{
+    		color: #4C536A;
+    	}
+
+	}
+
+	&__discount{
+		color: #FDDB4F;
+		font-size: 12px;
+		display: block;
+		text-transform: uppercase;
+	}
+
+	&__price{
+		font-size: 32px;
+		color: white;
+	}
+
+	&__ratinginfo, &__wheretobuy, &__info{
+		display: none;
+	}
+
+}
+.ba-active{
+	border-bottom: 2px solid white;
+	color: white;
+}
+.ba-show{
+	display: block;
+}
